@@ -1,0 +1,32 @@
+# Copilot Custom Instructions
+
+# Project Overview
+This project is a REST API for user management, implemented in both Node.js (Express) and Java (Apache Camel with Spring Boot). The Java version uses Camel routes for CRUD operations and listens on port 8080.
+
+# Coding Style
+- Use clear, concise, and readable code
+- Prefer Java 11+ features where possible
+- For REST endpoints, follow standard HTTP status codes and JSON responses
+- Add Java doc foreach file.
+- consider each private method for java doc.
+
+# Copilot Usage
+- When asked for code, prefer Java (Camel/Spring Boot) unless otherwise specified
+- For Node.js, use Express.js conventions
+- When converting code, preserve endpoint logic and data structure
+- Always ignore node_modules/ and package-lock.json in .gitignore
+- add proper package on top of route.
+- seperate Route File created for each different Route.
+- please generate the Junit Testcase.
+- code coverage must be 90%.
+- pom.xml includes the necessary Camel and Spring Boot dependencies
+- Build the project using Maven to download dependencies.
+- Make sure your Maven project structure is correct
+
+# Additional Instructions
+- If asked for tests, use JUnit for Java and Jest for Node.js
+- If asked for documentation, generate Markdown README
+- If asked for project setup, provide Maven instructions for Java and npm for Node.js
+- remove the node and js files  code once migration is done.
+- update the readme.md files as per java apache camel project.
+
